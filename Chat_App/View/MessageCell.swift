@@ -1,0 +1,30 @@
+//
+//  MessageCell.swift
+//  Chat_App
+//
+//  Created by Philip Tran on 1/24/21.
+//
+
+import UIKit
+
+class MessageCell: UITableViewCell {
+    
+    @IBOutlet weak var messageBubble: UIView!
+    @IBOutlet weak var label: UILabel!
+    @IBOutlet weak var leftImage: UIImageView!
+    @IBOutlet weak var rightImage: UIImageView!
+    
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        messageBubble.layer.cornerRadius = messageBubble.frame.size.height/5
+        // Initialization code
+    }
+
+    override func setSelected(_ selected: Bool, animated: Bool) {
+        super.setSelected(selected, animated: animated)
+
+        // Configure the view for the selected state
+    }
+    
+}
